@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy - Sharkline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0B1F2A;
+      color: #E6F7FF;
+      line-height: 1.6;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #00D1FF;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #1f3a47;
+      margin: 30px 0;
+    }
+
+    a {
+      color: #00D1FF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .back {
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <a href="index.html" class="back">← Back to home</a>
+
+```
+<h1>🦈 Privacy Policy for Sharkline</h1>
+<p><strong>Last updated:</strong> 10.04.2026</p>
+
+<h2>1. Introduction</h2>
+<p>Sharkline is a productivity application designed to help users track deadlines for school, work, and personal projects.</p>
+<p>Your privacy is important. This app is designed with a strong focus on simplicity and data minimization.</p>
+
+<hr>
+
+<h2>2. Data Collection</h2>
+<p><strong>Sharkline does not collect, store, or transmit any personal data to external servers.</strong></p>
+<p>All data you enter into the app (such as tasks, deadlines, or notes) is stored locally on your device only.</p>
+
+<hr>
+
+<h2>3. Data Usage</h2>
+<p>Your data is used solely to provide the core functionality of the app:</p>
+<ul>
+  <li>Tracking deadlines</li>
+  <li>Managing tasks and projects</li>
+  <li>Displaying reminders (if implemented)</li>
+</ul>
+<p>No data is used for analytics, advertising, or profiling.</p>
+
+<hr>
+
+<h2>4. Data Sharing</h2>
+<p><strong>Sharkline does not share your data with any third parties.</strong></p>
+<p>There are no external servers, no cloud synchronization, and no third-party integrations.</p>
+
+<hr>
+
+<h2>5. Data Security</h2>
+<ul>
+  <li>You are responsible for maintaining the security of your device</li>
+  <li>Sharkline does not have access to your data</li>
+</ul>
+
+<hr>
+
+<h2>6. Internet Access</h2>
+<p>Sharkline does not require an internet connection to function.</p>
+<p>If future versions introduce online features, this policy will be updated accordingly.</p>
+
+<hr>
+
+<h2>7. Children's Privacy</h2>
+<p>Sharkline does not knowingly collect any personal information from children.</p>
+
+<hr>
+
+<h2>8. Changes to This Privacy Policy</h2>
+<p>This Privacy Policy may be updated in the future. Changes will be reflected with an updated date.</p>
+
+<hr>
+
+<h2>9. Contact</h2>
+<p>Alex Budinsky - <a href="mailto:alexnbudinsky@gmail.com">alexnbudinsky@gmail.com</a></p>
+```
+
+  </div>
+</body>
+</html>
