@@ -1,66 +1,201 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Sharkline</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
+  <!-- Google Font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0B1F2A;
-      color: white;
-      text-align: center;
-      padding: 40px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      color: #00D1FF;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0f2a38, #07141c 70%);
+      color: #E6F7FF;
+      overflow-x: hidden;
     }
 
     .container {
-      max-width: 600px;
+      max-width: 1100px;
       margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* NAVBAR */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 600;
+      color: #00D1FF;
+    }
+
+    .nav a {
+      color: #9edfff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .hero-text h1 {
+      font-size: 56px;
+      margin: 0;
+      color: white;
+    }
+
+    .hero-text p {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #a8c7d6;
     }
 
     .button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #00D1FF;
+      margin-top: 30px;
+      padding: 14px 26px;
+      background: linear-gradient(135deg, #00D1FF, #007BFF);
       color: black;
+      font-weight: 600;
+      border-radius: 10px;
       text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
+      box-shadow: 0 0 20px rgba(0, 209, 255, 0.4);
     }
 
-    .section {
-      margin-top: 40px;
+    /* PHONE MOCK */
+    .phone {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .phone img {
+      width: 260px;
+      border-radius: 30px;
+      box-shadow: 0 0 60px rgba(0, 209, 255, 0.3);
+    }
+
+    /* FEATURES */
+    .features {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .features h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 18px;
+      color: #a8c7d6;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 14px;
+      color: #6b8a99;
+    }
+
+    .footer a {
+      color: #00D1FF;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 42px;
+      }
     }
   </style>
+
 </head>
+
 <body>
 
   <div class="container">
-    <h1>🦈 Sharkline</h1>
-    <p>Track your deadlines. Stay ahead. No cloud, no tracking — just you and your time.</p>
+
+```
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">🦈 Sharkline</div>
+  <div>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>Sharkline</h1>
+    <p>Track your deadlines. Stay ahead.<br>
+    No cloud, no tracking — just you and your time.</p>
 
     <a class="button" href="#">Download (coming soon)</a>
+  </div>
 
-    <div class="section">
-      <h2>Features</h2>
-      <p>✔ Track deadlines easily</p>
-      <p>✔ Works fully offline</p>
-      <p>✔ Simple and clean design</p>
-    </div>
+  <div class="phone">
+    <!-- Replace with your real screenshot later -->
+    <img src="https://via.placeholder.com/300x600/0B1F2A/00D1FF?text=Sharkline+App" alt="App preview">
+  </div>
+</div>
 
-    <div class="section">
-      <h2>Legal</h2>
-      <p><a href="privacy.html" style="color:#00D1FF;">Privacy Policy</a></p>
-      <p><a href="terms.html" style="color:#00D1FF;">Terms of Use</a></p>
-    </div>
+<!-- FEATURES -->
+<div class="features">
+  <h2>Features</h2>
+  <div class="feature-list">
+    <div>✔ Track deadlines easily</div>
+    <div>✔ Works fully offline</div>
+    <div>✔ Simple and clean design</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Use</a>
+  </p>
+  <p>© 2026 Sharkline</p>
+</div>
+```
+
   </div>
 
 </body>
