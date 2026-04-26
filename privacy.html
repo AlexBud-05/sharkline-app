@@ -1,118 +1,148 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Privacy Policy - Sharkline</title>
+  <title>Privacy Policy — Sharkline</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --cyan: #00D1FF;
+      --dark: #060d13;
+      --text: #E6F7FF;
+      --muted: #7eaec4;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0B1F2A;
-      color: #E6F7FF;
-      line-height: 1.6;
-      padding: 40px;
+      font-family: 'DM Sans', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.7;
     }
-
+    .bg {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse 70% 50% at 70% 10%, rgba(0,80,160,0.15) 0%, transparent 70%);
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(16px);
+      background: rgba(6,13,19,0.8);
+      border-bottom: 1px solid rgba(0,209,255,0.08);
+    }
+    .nav-inner {
+      max-width: 800px; margin: auto; padding: 0 24px;
+      height: 60px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 8px;
+      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px;
+      color: var(--text); text-decoration: none;
+    }
+    .logo svg { filter: drop-shadow(0 0 6px var(--cyan)); }
+    .back-link {
+      color: var(--cyan); text-decoration: none; font-size: 14px;
+      display: flex; align-items: center; gap: 6px; transition: gap 0.2s;
+    }
+    .back-link:hover { gap: 10px; }
     .container {
-      max-width: 800px;
-      margin: auto;
+      max-width: 800px; margin: auto; padding: 60px 24px 80px;
+      position: relative; z-index: 2;
     }
-
-    h1, h2 {
-      color: #00D1FF;
+    .doc-header { margin-bottom: 48px; }
+    .doc-header h1 {
+      font-family: 'Syne', sans-serif; font-size: clamp(28px, 5vw, 40px);
+      font-weight: 800; color: white; margin-bottom: 8px; letter-spacing: -1px;
     }
-
-    hr {
-      border: none;
-      border-top: 1px solid #1f3a47;
-      margin: 30px 0;
+    .doc-header p { color: var(--muted); font-size: 14px; }
+    h2 {
+      font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700;
+      color: var(--cyan); margin: 36px 0 12px;
     }
-
-    a {
-      color: #00D1FF;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .back {
-      margin-bottom: 20px;
-      display: inline-block;
+    p { color: #b8d8e8; margin-bottom: 12px; }
+    ul { color: #b8d8e8; padding-left: 20px; margin-bottom: 12px; }
+    ul li { margin-bottom: 6px; }
+    hr { border: none; border-top: 1px solid rgba(0,209,255,0.1); margin: 8px 0; }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: var(--text); }
+    footer {
+      text-align: center; padding: 28px;
+      border-top: 1px solid rgba(0,209,255,0.08);
+      color: var(--muted); font-size: 13px; position: relative; z-index: 2;
     }
   </style>
-
 </head>
-
 <body>
+  <div class="bg"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">
+        <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
+          <path d="M4 22 C4 22 8 10 16 6 C16 6 12 14 14 18 C14 18 10 16 4 22Z" fill="#00D1FF"/>
+          <path d="M14 18 C16 14 22 12 24 22 C20 20 16 20 14 18Z" fill="#007BFF"/>
+        </svg>
+        Sharkline
+      </a>
+      <a class="back-link" href="index.html">← Back to home</a>
+    </div>
+  </nav>
+
   <div class="container">
-    <a href="index.html" class="back">← Back to home</a>
+    <div class="doc-header">
+      <h1>Privacy Policy</h1>
+      <p><strong>Last updated:</strong> April 10, 2026</p>
+    </div>
 
-```
-<h1>🦈 Privacy Policy for Sharkline</h1>
-<p><strong>Last updated:</strong> 10.04.2026</p>
+    <h2>1. Introduction</h2>
+    <p>Sharkline is a productivity application designed to help users track deadlines for school, work, and personal projects.</p>
+    <p>Your privacy is important. This app is designed with a strong focus on simplicity and data minimization.</p>
+    <hr>
 
-<h2>1. Introduction</h2>
-<p>Sharkline is a productivity application designed to help users track deadlines for school, work, and personal projects.</p>
-<p>Your privacy is important. This app is designed with a strong focus on simplicity and data minimization.</p>
+    <h2>2. Data Collection</h2>
+    <p><strong>Sharkline does not collect, store, or transmit any personal data to external servers.</strong></p>
+    <p>All data you enter into the app (such as tasks, deadlines, or notes) is stored locally on your device only.</p>
+    <hr>
 
-<hr>
+    <h2>3. Data Usage</h2>
+    <p>Your data is used solely to provide the core functionality of the app:</p>
+    <ul>
+      <li>Tracking deadlines</li>
+      <li>Managing tasks and projects</li>
+      <li>Displaying reminders (if implemented)</li>
+    </ul>
+    <p>No data is used for analytics, advertising, or profiling.</p>
+    <hr>
 
-<h2>2. Data Collection</h2>
-<p><strong>Sharkline does not collect, store, or transmit any personal data to external servers.</strong></p>
-<p>All data you enter into the app (such as tasks, deadlines, or notes) is stored locally on your device only.</p>
+    <h2>4. Data Sharing</h2>
+    <p><strong>Sharkline does not share your data with any third parties.</strong></p>
+    <p>There are no external servers, no cloud synchronization, and no third-party integrations.</p>
+    <hr>
 
-<hr>
+    <h2>5. Data Security</h2>
+    <ul>
+      <li>You are responsible for maintaining the security of your device.</li>
+      <li>Sharkline does not have access to your data.</li>
+    </ul>
+    <hr>
 
-<h2>3. Data Usage</h2>
-<p>Your data is used solely to provide the core functionality of the app:</p>
-<ul>
-  <li>Tracking deadlines</li>
-  <li>Managing tasks and projects</li>
-  <li>Displaying reminders (if implemented)</li>
-</ul>
-<p>No data is used for analytics, advertising, or profiling.</p>
+    <h2>6. Internet Access</h2>
+    <p>Sharkline does not require an internet connection to function.</p>
+    <p>If future versions introduce online features, this policy will be updated accordingly.</p>
+    <hr>
 
-<hr>
+    <h2>7. Children's Privacy</h2>
+    <p>Sharkline does not knowingly collect any personal information from children.</p>
+    <hr>
 
-<h2>4. Data Sharing</h2>
-<p><strong>Sharkline does not share your data with any third parties.</strong></p>
-<p>There are no external servers, no cloud synchronization, and no third-party integrations.</p>
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>This Privacy Policy may be updated in the future. Changes will be reflected with an updated date.</p>
+    <hr>
 
-<hr>
-
-<h2>5. Data Security</h2>
-<ul>
-  <li>You are responsible for maintaining the security of your device</li>
-  <li>Sharkline does not have access to your data</li>
-</ul>
-
-<hr>
-
-<h2>6. Internet Access</h2>
-<p>Sharkline does not require an internet connection to function.</p>
-<p>If future versions introduce online features, this policy will be updated accordingly.</p>
-
-<hr>
-
-<h2>7. Children's Privacy</h2>
-<p>Sharkline does not knowingly collect any personal information from children.</p>
-
-<hr>
-
-<h2>8. Changes to This Privacy Policy</h2>
-<p>This Privacy Policy may be updated in the future. Changes will be reflected with an updated date.</p>
-
-<hr>
-
-<h2>9. Contact</h2>
-<p>Alex Budinsky - <a href="mailto:alexnbudinsky@gmail.com">alexnbudinsky@gmail.com</a></p>
-```
-
+    <h2>9. Contact</h2>
+    <p>Alex Budinsky — <a href="mailto:alexnbudinsky@gmail.com">alexnbudinsky@gmail.com</a></p>
   </div>
+
+  <footer>© 2026 Sharkline · <a href="index.html">Home</a> · <a href="terms.html">Terms of Use</a></footer>
 </body>
 </html>
