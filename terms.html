@@ -1,121 +1,153 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Terms of Use - Sharkline</title>
+  <title>Terms of Use — Sharkline</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --cyan: #00D1FF;
+      --dark: #060d13;
+      --text: #E6F7FF;
+      --muted: #7eaec4;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0B1F2A;
-      color: #E6F7FF;
-      line-height: 1.6;
-      padding: 40px;
+      font-family: 'DM Sans', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.7;
     }
-
+    .bg {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse 70% 50% at 30% 20%, rgba(0,60,140,0.12) 0%, transparent 70%);
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(16px);
+      background: rgba(6,13,19,0.8);
+      border-bottom: 1px solid rgba(0,209,255,0.08);
+    }
+    .nav-inner {
+      max-width: 800px; margin: auto; padding: 0 24px;
+      height: 60px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 8px;
+      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px;
+      color: var(--text); text-decoration: none;
+    }
+    .back-link {
+      color: var(--cyan); text-decoration: none; font-size: 14px;
+      display: flex; align-items: center; gap: 6px; transition: gap 0.2s;
+    }
+    .back-link:hover { gap: 10px; }
     .container {
-      max-width: 800px;
-      margin: auto;
+      max-width: 800px; margin: auto; padding: 60px 24px 80px;
+      position: relative; z-index: 2;
     }
-
-    h1, h2 {
-      color: #00D1FF;
+    .doc-header { margin-bottom: 48px; }
+    .doc-header h1 {
+      font-family: 'Syne', sans-serif; font-size: clamp(28px, 5vw, 40px);
+      font-weight: 800; color: white; margin-bottom: 8px; letter-spacing: -1px;
     }
-
-    hr {
-      border: none;
-      border-top: 1px solid #1f3a47;
-      margin: 30px 0;
+    .doc-header p { color: var(--muted); font-size: 14px; }
+    h2 {
+      font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700;
+      color: var(--cyan); margin: 36px 0 12px;
     }
-
-    a {
-      color: #00D1FF;
-      text-decoration: none;
-    }
-
-    .back {
-      margin-bottom: 20px;
-      display: inline-block;
+    p { color: #b8d8e8; margin-bottom: 12px; }
+    ul { color: #b8d8e8; padding-left: 20px; margin-bottom: 12px; }
+    ul li { margin-bottom: 6px; }
+    hr { border: none; border-top: 1px solid rgba(0,209,255,0.1); margin: 8px 0; }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: var(--text); }
+    footer {
+      text-align: center; padding: 28px;
+      border-top: 1px solid rgba(0,209,255,0.08);
+      color: var(--muted); font-size: 13px; position: relative; z-index: 2;
     }
   </style>
-
 </head>
-
 <body>
+  <div class="bg"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">
+        <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
+          <path d="M4 22 C4 22 8 10 16 6 C16 6 12 14 14 18 C14 18 10 16 4 22Z" fill="#00D1FF"/>
+          <path d="M14 18 C16 14 22 12 24 22 C20 20 16 20 14 18Z" fill="#007BFF"/>
+        </svg>
+        Sharkline
+      </a>
+      <a class="back-link" href="index.html">← Back to home</a>
+    </div>
+  </nav>
+
   <div class="container">
-    <a href="index.html" class="back">← Back to home</a>
+    <div class="doc-header">
+      <h1>Terms of Use</h1>
+      <p><strong>Last updated:</strong> April 10, 2026</p>
+    </div>
 
-```
-<h1>🦈 Terms of Use for Sharkline</h1>
-<p><strong>Last updated:</strong> 10.04.2026</p>
+    <h2>1. Acceptance of Terms</h2>
+    <p>By using Sharkline, you agree to these Terms. If you do not agree, do not use the app.</p>
+    <hr>
 
-<h2>1. Acceptance of Terms</h2>
-<p>By using Sharkline, you agree to these Terms. If you do not agree, do not use the app.</p>
+    <h2>2. Description of the App</h2>
+    <p>Sharkline is a productivity tool for managing deadlines and tasks. It operates locally on your device.</p>
+    <hr>
 
-<hr>
+    <h2>3. Use of the App</h2>
+    <p>You agree to use Sharkline lawfully and responsibly. You are responsible for your data and usage.</p>
+    <hr>
 
-<h2>2. Description of the App</h2>
-<p>Sharkline is a productivity tool for managing deadlines and tasks. It operates locally on your device.</p>
+    <h2>4. No Warranty</h2>
+    <p><strong>The app is provided "as is" without warranties of any kind.</strong></p>
+    <ul>
+      <li>No guarantee of error-free operation</li>
+      <li>No guarantee it meets your expectations</li>
+      <li>No guarantee of uninterrupted use</li>
+    </ul>
+    <hr>
 
-<hr>
+    <h2>5. Limitation of Liability</h2>
+    <p><strong>You use Sharkline at your own risk.</strong></p>
+    <p>The developer is not liable for:</p>
+    <ul>
+      <li>Data loss</li>
+      <li>Device damage or malfunction</li>
+      <li>Software conflicts</li>
+      <li>Indirect or consequential damages</li>
+    </ul>
+    <hr>
 
-<h2>3. Use of the App</h2>
-<p>You agree to use Sharkline lawfully and responsibly. You are responsible for your data and usage.</p>
+    <h2>6. Device and Data Responsibility</h2>
+    <ul>
+      <li>You are responsible for your device and backups.</li>
+      <li>You are responsible for compatibility.</li>
+    </ul>
+    <hr>
 
-<hr>
+    <h2>7. Updates and Changes</h2>
+    <p>These Terms may be updated. Continued use means acceptance of changes.</p>
+    <hr>
 
-<h2>4. No Warranty</h2>
-<p><strong>The app is provided "as is" without warranties of any kind.</strong></p>
-<ul>
-  <li>No guarantee of error-free operation</li>
-  <li>No guarantee it meets your expectations</li>
-  <li>No guarantee of uninterrupted use</li>
-</ul>
+    <h2>8. Termination</h2>
+    <p>You may stop using the app at any time by uninstalling it.</p>
+    <hr>
 
-<hr>
+    <h2>9. Governing Law</h2>
+    <p>These Terms are governed by the laws of Slovakia.</p>
+    <hr>
 
-<h2>5. Limitation of Liability</h2>
-<p><strong>You use Sharkline at your own risk.</strong></p>
-<p>The developer is not liable for:</p>
-<ul>
-  <li>Data loss</li>
-  <li>Device damage or malfunction</li>
-  <li>Software conflicts</li>
-  <li>Indirect or consequential damages</li>
-</ul>
-
-<hr>
-
-<h2>6. Device and Data Responsibility</h2>
-<ul>
-  <li>You are responsible for your device and backups</li>
-  <li>You are responsible for compatibility</li>
-</ul>
-
-<hr>
-
-<h2>7. Updates and Changes</h2>
-<p>These Terms may be updated. Continued use means acceptance of changes.</p>
-
-<hr>
-
-<h2>8. Termination</h2>
-<p>You may stop using the app at any time by uninstalling it.</p>
-
-<hr>
-
-<h2>9. Governing Law</h2>
-<p>These Terms are governed by the laws of Slovakia.</p>
-
-<hr>
-
-<h2>10. Contact</h2>
-<p>Alex Budinský - <a href="mailto:alexbudinsky@gmail.com">alexbudinsky@gmail.com</a></p>
-```
-
+    <h2>10. Contact</h2>
+    <p>Alex Budinský — <a href="mailto:alexbudinsky@gmail.com">alexbudinsky@gmail.com</a></p>
   </div>
+
+  <footer>© 2026 Sharkline · <a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a></footer>
 </body>
 </html>
